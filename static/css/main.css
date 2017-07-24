@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    color: black;
+}
+
+
+.photoContainer {
+  max-width: 40vw;
+  max-height: 100%;
+  float: left;
+
+}
+
+.photoContainer img {
+  width: 100%;
+  height: auto;
+
+}
+
+.menuContainer {
+  padding-top: 20px;
+  background-color: #fefeff;
+  width: 45%;
+  height: 103%;
+  float: left;
+}
+
+.menuContainer img {
+  padding-left: 40%;
+}
+
+.menuContainer ul li {
+  position: relative;
+}
+
+.aboutme  p{
+  text-align: justify;
+  line-height: 25px;
+  padding: 15px;
+}
+
+blockquote {
+  display: block;
+  text-align: center;
+}
+
+.socialMContainer {
+  position: absolute;
+  left: 14%;
+  bottom: 10%;
+}
+
+.socialMContainer li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.socialMContainer ul li  {
+  height: 50px;
+  width: 50px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li {
+  padding-top: 10px;
+  font-size: 200%;
+}
+
+.socialMContainer ul   {
+  list-style-type: none;
+}
+
+.textBoxContainer {
+  position: absolute;
+  left: 250px;
+  top: 300px;
+  width: 250px;
+  height: 150px;
+  margin-top: 60px;
+  text-align: center;
+  color: #fefeff;
+}
+
+.textframe {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 100%;
+  left: 0px;
+  top: 0px;
+  width: 250px;
+  height: 150px;
+  margin-top: 0px;
+}
+
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme {
+  padding: 10px;
+
+}
+
+.line {
+  line-height: 2px;
+}
+
+hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:double;
+    border-width: 1px;
+    width: 70%;
+}
