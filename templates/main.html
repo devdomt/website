@@ -14,24 +14,25 @@
 </head>
 
 <body>
+  {% block content %}
   <div class="mainContainer">
     <div class="photoContainer">
-      <img src="../img/myself" alt="moja facjata">
+      <img src="{{ url_for('static', filename = 'img/myself') }}" alt="moja facjata">
         <div class="socialMContainer">
           <ul>
             <li>
               <a href="default.asp">
-              <img src="../img/github-8-64.png" alt="git link">
+              <img src="{{ url_for('static', filename = 'img/github-8-64.png') }}" alt="git link">
               </a>
             </li>
             <li>
               <a href="default.asp">
-              <img id ="img1" src="../img/email-64.png" alt="gmail link">
+              <img id ="img1" src="{{ url_for('static', filename = 'img/email-64.png') }}" alt="gmail link">
               </a>
             </li>
             <li>
               <a href="default.asp">
-              <img src="../img/linkedin-3-64.png" alt="HTML tutorial">
+              <img src="{{ url_for('static', filename = 'img/linkedin-3-64.png') }}" alt="linkedin link">
               </a>
             </li>
           </ul>
@@ -56,22 +57,24 @@
         </p>
         <hr></hr>
       </article>
-      
+
       <ul>
-        <li>Projekty</li>
+        <li><a href="{{ url_for("render_article_page")}}">Artykuły</a></li>
         <li>Prototypy</li>
-        <li>Artykuły</li>
+        <li>Projekty</li>
         <li>Gdzie mnie złapać</li>
 
       </ul>
     </div>
   </div>
 </div>
+{% endblock %}
+{% block footer %}
   <div class="footerContainer">
     <footer>
     </footer>
   </div>
-
+{% endblock %}
 </body>
 
 

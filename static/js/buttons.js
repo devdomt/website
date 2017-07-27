@@ -26,12 +26,3 @@ $(function(){
       }
   });
 });
-
-
-$(document).ready(function(){
-   setInterval(callMe,4000);
-});
-
-function callMe(){
-   $(".textframe").effect("shake");
-}
