@@ -1,0 +1,24 @@
+body {
+  background-color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main_container {
+  color: black;
+  background-color: white;
+}
+
+.navbar-header {
+  padding-left: 20%;
+}
+
+.navbar-nav ul {
+  list-style-type: none;
+}
+
+.navbar-nav li {
+  display: inline;
+}
