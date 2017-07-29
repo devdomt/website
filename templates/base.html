@@ -17,7 +17,12 @@
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="main_container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="{{ url_for('render_main_page') }}">Blog</a>
+          <ul>
+            <li><a class="navbar-brand" href="{{ url_for('render_main_page') }}">Return to main page</a></li>
+            <li><a class="navbar-brand" href="{{ url_for('render_where_page') }}">Gdzie mnie złapać</a></li>
+            <li><a class="navbar-brand" href="{{ url_for('render_project_page') }}">Projekty</a></li>
+            <li><a class="navbar-brand" href="{{ url_for('render_prototype_page') }}">Prototypy</a></li>
+        </ul>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -28,13 +33,7 @@
             {% endif %}
             {% block extra_header %}{% endblock %}
           </ul>
-          {% block search_bar %}
-            <form action="{{ url_for('index') }}" class="navbar-form navbar-right" id="search-form" method="get" role="search">
-              <div class="form-group">
-                <input class="form-control" name="q" placeholder="Search" type="text" value="{% if search %}{{ search }}{% endif %}">
-              </div>
-            </form>
-          {% endblock %}
+
         </div>
       </div>
     </div>
@@ -49,16 +48,23 @@
 
       {% block page_header %}
         <div class="page-header">
+
           <h1>{% block content_title %}{% endblock %}</h1>
+
         </div>
+
       {% endblock %}
 
       {% block content %}{% endblock %}
 
-      <footer>
-        <hr />
-        <p>Blog, &copy; 2015</p>
-      </footer>
+
     </div>
+
+  <div class = "footerDiv">
+    <footer>
+      <hr />
+      <p>Blog, &copy; 2015</p>
+    </footer>
+  </div>
   </body>
 </html>

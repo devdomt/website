@@ -4,21 +4,121 @@ body {
   margin-right: 10%;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .main_container {
   color: black;
   background-color: white;
+  height: 60px;
+  margin-bottom: 5%;
+
+}
+
+
+
+.container {
+  color: black;
+  background-color: white;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+
 }
 
 .navbar-header {
-  padding-left: 20%;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.navbar-header ul li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 20px;
 }
 
 .navbar-nav ul {
+  margin-top: 10%;
   list-style-type: none;
 }
 
 .navbar-nav li {
   display: inline;
+}
+
+#BlogEntry {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:double;
+    border-width: 1px;
+    width: 70%;
+}
+
+.footerDiv footer {
+  height: 10%;
+  margin-top: 5%;
+  background-color: white;
+}
+
+.page-header {
+  text-align: center;
+}
+
+
+hr {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style:double;
+  border-width: 1px;
+  width: 70%;
+}
+
+.grid-cnt {
+    padding-right: -11%;
+    margin-left: -11%;
+    margin-bottom: -10%;
+    margin-top: -10%;
+    padding-left: -11;
+
+    background:#fff;
+}
+.grid-test {margin:15px 0;}
+.grid-test.correct {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.grid-test.correct .grid-test {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.grid-test:before, .grid-test:after {
+    content: "";
+    display: table;
+}
+.grid-test:after { clear: both; }
+.grid-test [class*="col-"] {
+    vertical-align:top;
+    float: left;
+    padding-left: 15px;
+    padding-right:15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid-test [class*="col-"] { width: 50%; height:150px; margin-top: 10px; margin-right: -20px;}
+.grid-test [class*="col-"] strong {
+    height:150px;
+    background: #eaeaea;
+    color:#333;
+    display:block;
+    min-height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-family:sans-serif;
+    border-radius:2px;
+    font-size:13px;
+    cursor:pointer;
+    margin-top: 10px;
 }

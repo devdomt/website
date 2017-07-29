@@ -9,6 +9,10 @@ body {
     color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 .photoContainer {
   max-width: 40vw;
@@ -123,4 +127,11 @@ hr {
     border-style:double;
     border-width: 1px;
     width: 70%;
+    border-color: black;
+}
+
+
+.navbar-header {
+
+
 }

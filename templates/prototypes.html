@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Artykuły{% endblock %}
+
+{% block content_title %}{% if search %}Search "{{ search }}"{% else %}{% endif %}{% endblock %}
+
+{% block content %}
+<div class="grid-cnt">
+  <div class="grid-test grid-test-node">
+      <div class="col-1-2"><strong>Kliknij</strong></div>
+      <div class="col-1-2"><strong>Kliknij</strong></div>
+      <div class="col-2-1"><strong>Kliknij</strong></div>
+      <div class="col-2-2"><strong>Kliknij</strong></div>
+      <div class="col-3-1"><strong>Kliknij</strong></div>
+      <div class="col-3-2"><strong>Kliknij</strong></div>
+      <div class="col-4-1"><strong>Kliknij</strong></div>
+      <div class="col-4-2"><strong>Kliknij</strong></div>
+  </div>
+</div>
+
+{% endblock %}
